@@ -81,7 +81,7 @@ ol.how b{color:var(--blue)}.ver{text-align:center;font-size:11px;color:var(--mut
 <li><b>راجع نص الرسالة</b> في القسم التالي وعدّله إن لزم. المتغيرات {ولي أمر الطالب} و{التفاصيل} و{الإجمالي} تتبدل تلقائياً لكل ولي أمر.</li>
 <li><b>كل بطاقة = ولي أمر واحد.</b> الإخوة الذين يشتركون في رقم واحد يظهرون في بطاقة واحدة بمجموع مبالغهم.</li>
 <li><b>زر «واتساب»:</b> يفتح المحادثة والرسالة جاهزة، فاضغط «إرسال» داخل واتساب. يُسجَّل الإرسال عند الضغط ويظهر <b>✓</b> على الزر. إن ضغطت ولم ترسل فاضغط «تراجع».</li>
-<li><b>زر «SMS»:</b> ينسخ الرسالة ويحاول فتح تطبيق الرسائل ويُسجَّل ويظهر <b>✓</b>. إن لم يفتح التطبيق فالصق الرسالة في الرسائل (زر «نسخ الرقم» يساعدك).</li>
+<li><b>زر «SMS»:</b> ينسخ الرسالة ويحاول فتح تطبيق الرسائل ويُسجَّل ويظهر <b>✓</b>. إن لم يفتح التطبيق فالصق الرسالة في الرسائل (تُنسخ الرسالة تلقائياً عند الضغط).</li>
 <li><b>إعادة الإرسال:</b> بعد أول إرسال يصبح الزر «✓ إعادة واتساب/SMS». يظهر تحت الاسم عدد المرات وآخر وقت واسم من أرسل.</li>
 <li><b>«سجّل واتساب/SMS»</b> لتسجيل إرسال تم من خارج الصفحة. و<b>«بلا واتساب»</b> إذا تبيّن أن الرقم ليس عليه واتساب، فيظهر في التقرير لإرسال SMS له.</li>
 <li><b>«✅ تم السداد»</b> عند تأكيد السداد، فتُخفى أزرار الإرسال ويُحسب المبلغ ضمن المسدَّد. و«إلغاء» للرجوع.</li>
@@ -89,6 +89,8 @@ ol.how b{color:var(--blue)}.ver{text-align:center;font-size:11px;color:var(--mut
 <li><b>البحث والتصفية:</b> ابحث باسم الطالب أو الرقم، وصفِّ بالأزرار (لم يُرسل، واتساب، SMS، بلا واتساب، سدّدوا، مشاكل).</li>
 <li><b>الأرقام الدولية:</b> تُقبل الأرقام المصرية (01012345678) وأي رقم دولي بصيغة <b>+رمز الدولة</b> أو 00، مثل +967777123456 أو +966501234567.</li>
 <li><b>طلاب بلا رقم:</b> افتح قسم «📵 طلاب بلا رقم صالح». اكتب الرقم ثم «إضافة»، أو «📇 من جهات الاتصال» (يُضاف الرقم مباشرة بعد اختيار الجهة)، أو «🔐 السماح بالبحث في جهات الاتصال» (أندرويد/Chrome)، أو استورد ملف VCF ثم «اعتماد».</li>
+<li><b>✏️ تعديل الرقم:</b> زر في كل بطاقة يفتح نافذة صغيرة لإدخال الرقم الصحيح وحفظه، ويُطبَّق على طلاب البطاقة وتنتقل حالتهم (الإرسال والسندات) إلى الرقم الجديد.</li>
+<li><b>💲 اعتماد خصم من الرسوم:</b> زر في كل بطاقة يفتح نافذة لاختيار الطالب وكتابة مبلغ الخصم. يستطيع أي مستخدم اعتماده، فيُنقص من المتبقي على الطالب ويُسجَّل باسمه، ويمكن إلغاؤه من نفس النافذة.</li>
 <li><b>🧾 سند القبض:</b> بجانب اسم كل طالب زر «🧾 سند». يظهر المبلغ المتبقي جاهزاً وتعدّله كما تشاء مع طريقة الدفع والملاحظات، ثم «🖨️ طباعة» أو «⬇️ PDF». يُكتب في السند ما توفّر من بيانات الطالب وتفاصيل الرسوم، ويُترك الباقي فارغاً. يُسجَّل كل سند صادر باسمك ويظهر في التقرير وفي إكسل.</li>
 <li><b>«⚠️ بلاغ مشكلة»</b> في كل بطاقة: اختر السبب واكتب التفاصيل ثم «حفظ البلاغ» (يُسجَّل باسمك)، ويمكنك «إرسال للمسؤول» عبر واتساب. تظهر البلاغات في تصفية «مشاكل» وفي التقرير.</li>
 <li><b>رفع أسماء ومبالغ جديدة:</b> من قسم «📊 البيانات» ارفع ملف إكسل (نفس ملف التقارير الأصلي من نظامكم، أو ملفاً فيه أعمدة الاسم والرقم والمبلغ)، راجع المعاينة ثم «تأكيد الاستيراد». الطالب الموجود يُحدَّث مبلغه وتفاصيل رسومه دون مسح رقم أضفته، والجديد يُضاف.</li>
@@ -154,7 +156,7 @@ ol.how b{color:var(--blue)}.ver{text-align:center;font-size:11px;color:var(--mut
 <input id="mgr" type="tel" inputmode="tel" dir="ltr" placeholder="01012345678">
 <div class="btns"><button id="tSend" class="paid" style="flex:1">إرسال البلاغ عبر واتساب</button><button id="tCopy">نسخ البلاغ</button></div>
 <div class="hint" style="margin-top:6px">المعلومات المرفقة تلقائياً:</div><pre id="tInfo" class="hint" dir="ltr" style="text-align:left"></pre></details>
-<div class="ver">إشعارات السداد — الإصدار 10</div>
+<div class="ver">إشعارات السداد — الإصدار 11</div>
 
 <div class="bar"><button id="undo">↶ تراجع</button></div>
 <div id="who"><div class="box"><b style="font-size:17px;color:var(--blue)">من أنت؟</b>
@@ -173,6 +175,24 @@ ol.how b{color:var(--blue)}.ver{text-align:center;font-size:11px;color:var(--mut
 <div class="hint" style="margin-top:6px">ملاحظات (اختياري)</div><input id="rcNote">
 <div class="btns" style="margin-top:12px"><button id="rcPrint" class="paid" style="flex:1">🖨️ طباعة</button><button id="rcPdf" class="paid" style="flex:1;background:var(--blue);border-color:var(--blue)">⬇️ PDF</button><button id="rcClose" style="flex:0 0 70px">إغلاق</button></div>
 <div class="hint" id="rcLock" style="color:var(--ok);margin-top:6px"></div></div></div>
+<div id="pe" style="display:none;position:fixed;inset:0;z-index:26;background:rgba(10,30,50,.55);align-items:center;justify-content:center;padding:14px"><div style="background:#fff;border-radius:16px;padding:14px;width:100%;max-width:380px">
+<b style="font-size:17px;color:var(--blue)">✏️ تعديل رقم ولي الأمر</b>
+<div class="hint" style="margin-top:6px">الرقم الحالي: <b dir="ltr" id="peCur"></b></div>
+<div class="hint" style="margin-top:6px">الرقم الصحيح (مصري 01012345678 أو دولي +967777123456):</div>
+<input id="peNew" type="tel" inputmode="tel" dir="ltr" placeholder="01012345678" style="font-size:18px;text-align:center">
+<div class="hint" id="peInfo" style="margin-top:6px"></div>
+<div class="btns" style="margin-top:10px"><button id="peSave" class="paid" style="flex:1">حفظ الرقم</button><button id="peClose" style="flex:0 0 80px">إلغاء</button></div></div></div>
+<div id="dc" style="display:none;position:fixed;inset:0;z-index:26;background:rgba(10,30,50,.55);align-items:center;justify-content:center;padding:14px;overflow:auto"><div style="background:#fff;border-radius:16px;padding:14px;width:100%;max-width:400px;margin:auto">
+<b style="font-size:17px;color:var(--blue)">💲 اعتماد خصم من الرسوم</b>
+<select id="dcStu" style="margin-top:8px"></select>
+<div class="hint" id="dcCur" style="margin-top:6px;font-weight:bold;color:var(--tx)"></div>
+<div class="hint" style="margin-top:6px">مبلغ الخصم (جنيه):</div>
+<input id="dcAmt" type="number" inputmode="decimal" step="0.01" dir="ltr" style="font-size:20px;text-align:center">
+<div class="hint" id="dcAfter" style="color:var(--blue);margin-top:4px"></div>
+<div class="hint" style="margin-top:6px">سبب الخصم (اختياري):</div><input id="dcNote">
+<div id="dcList"></div>
+<div class="btns" style="margin-top:10px"><button id="dcSave" class="paid" style="flex:1">اعتماد الخصم</button><button id="dcClose" style="flex:0 0 80px">إغلاق</button></div>
+<div class="hint" style="margin-top:6px">يُنقص الخصم من المتبقي على الطالب ويُسجَّل باسم من اعتمده.</div></div></div>
 <div id="toast"></div>
 
 <script>
@@ -259,6 +279,10 @@ function undo(){const u=U.pop();if(!u)return;
  if(u.eid){const i=L.findIndex(e=>e.id===u.eid);if(i>=0){EDIRTY.add(day(L[i].t));L.splice(i,1)}}
  if(u.k==='a'){if(u.prev)A[u.key]=u.prev;else delete A[u.key];ADIRTY.add(u.key);renderExc()}
  else if(u.k==='x'){X=X.filter(r=>r.b!==u.b);XDIRTY.add(u.b);renderExc()}
+ else if(u.k==='e'){u.rows.forEach(r=>{const x=X.find(y=>y.id===r.id);if(x){x.p=r.p;XDIRTY.add(r.b)}});
+  [u.from,u.to].forEach(p=>{if(u.sOld[p])S[p]=u.sOld[p];else delete S[p];DIRTY.add(p)});
+  Object.keys(u.aOld).forEach(k=>{A[k]=u.aOld[k];ADIRTY.add(k)});renderExc()}
+ else if(u.k==='d'){const x=X.find(y=>y.id===u.id);if(x){x.r=u.prev.r;if(u.prev.had.ds)x.ds=u.prev.ds;else delete x.ds;if(u.prev.dc)x.dc=u.prev.dc;else delete x.dc;XDIRTY.add(u.b)}renderExc()}
  else if(u.p){if(u.prev)S[u.p]=u.prev;else delete S[u.p];DIRTY.add(u.p)}
  save();render();toast('تم التراجع')}
 function setAdd(key,p,nm){if(need())return;const u={k:'a',key:key,prev:A[key]||null};if(p)A[key]=p;else delete A[key];
@@ -379,7 +403,7 @@ function userStats(){const o={},t0=new Date();t0.setHours(0,0,0,0);
   if(e.a==='wa'){u.wa++;if(e.t>=t0)u.tw++}else if(e.a==='sms'){u.sms++;if(e.t>=t0)u.ts++}
   else if(e.a==='paid'){u.paid++;if(e.t>=t0)u.tp++}else if(e.a==='pb')u.pb++;else if(e.a==='add')u.add++;else if(e.a==='import')u.imp++});
  return Object.values(o)}
-const ACT={wa:'إرسال واتساب',sms:'إرسال SMS',paid:'تم السداد',unpaid:'إلغاء السداد',nowa:'بلا واتساب','nowa-':'إلغاء بلا واتساب',pb:'بلاغ مشكلة','pb-':'حذف بلاغ',reset:'تصفير',add:'إضافة رقم',unadd:'حذف رقم',import:'استيراد إكسل',receipt:'سند قبض',delimport:'حذف دفعة مستوردة'};
+const ACT={wa:'إرسال واتساب',sms:'إرسال SMS',paid:'تم السداد',unpaid:'إلغاء السداد',nowa:'بلا واتساب','nowa-':'إلغاء بلا واتساب',pb:'بلاغ مشكلة','pb-':'حذف بلاغ',reset:'تصفير',add:'إضافة رقم',unadd:'حذف رقم',import:'استيراد إكسل',receipt:'سند قبض',phone:'تعديل رقم',discount:'اعتماد خصم','discount-':'إلغاء خصم',delimport:'حذف دفعة مستوردة'};
 function report(){
  const grp=f=>G.filter(g=>f(st(g.phone)));
  const L2=(a,c,by)=>a.length?a.map(g=>{const s=st(g.phone);return'- '+label(g)+' ('+g.phone+')'+(c&&s[c]>1?' ×'+s[c]:'')+((by&&s[by])?' · '+s[by]:'')}).join('\n'):'- لا أحد';
@@ -483,7 +507,7 @@ function showPreview(){const ok=PREV.filter(r=>normPhone(r.p)),no=PREV.filter(r=
 function doImport(){if(need()||!PREV)return;
  const b=Date.now().toString(36),idx=new Map(X.map(x=>[nkey(x),x])),touched=new Set();let add=0,upd=0;
  PREV.forEach((r,i)=>{const e=idx.get(nkey(r));
-  if(e){const old=JSON.stringify(e),oldP=e.p;Object.assign(e,r,{id:e.id,b:e.b,dev:e.dev});if(normPhone(oldP)&&!normPhone(r.p))e.p=oldP;if(JSON.stringify(e)!==old){touched.add(e.b);upd++}}
+  if(e){const old=JSON.stringify(e),oldP=e.p;Object.assign(e,r,{id:e.id,b:e.b,dev:e.dev});if(normPhone(oldP)&&!normPhone(r.p))e.p=oldP;if(e.dc&&e.dc.length){const sm=e.dc.reduce((t,d)=>t+d.a,0);e.r=Math.max(0,Math.round((e.r-sm)*100)/100);e.ds=Math.round(((e.ds||0)+sm)*100)/100}if(JSON.stringify(e)!==old){touched.add(e.b);upd++}}
   else{const o=Object.assign({id:b+'_'+i,b:b,dev:DEV},r);X.push(o);idx.set(nkey(o),o);add++}});
  PREV=null;$('xPrev').innerHTML='';
  if(!add&&!upd){toast('لا توجد تغييرات: كل البيانات موجودة ومطابقة');return}
@@ -530,7 +554,7 @@ function render(){
    '</div><div class="amt">'+fmt(g.total)+'<br><small>جنيه</small></div></div>';
   if(!s.paid){
    h+='<div class="btns"><a class="wa'+(s.wa?' sent':'')+'" target="_blank" rel="noopener" href="https://wa.me/'+intl+'?text='+enc+'">'+(s.wa?'✓ إعادة واتساب':'واتساب')+'</a><a class="sms'+(s.sms?' sent':'')+'" href="sms:+'+intl+sep+'body='+enc+'">'+(s.sms?'✓ إعادة SMS':'SMS')+'</a></div>'+
-   '<div class="btns sm"><button class="cm">نسخ الرسالة</button><button class="cp">نسخ الرقم</button></div>'+
+   '<div class="btns sm"><button class="cm">💲 اعتماد خصم من الرسوم</button><button class="cp">✏️ تعديل الرقم</button></div>'+
    '<div class="btns rec"><button class="rw'+(s.wa?' on w':'')+'">'+(s.wa?'✓ ':'')+'سجّل واتساب</button><button class="rs'+(s.sms?' on s':'')+'">'+(s.sms?'✓ ':'')+'سجّل SMS</button><button class="n'+(s.nowa?' on':'')+'">'+(s.nowa?'✓ ':'')+'بلا واتساب</button></div>'}
   h+='<div class="btns">'+(s.paid?'<button class="unpaid up">✓ تم السداد (إلغاء)</button>':'<button class="paid pd">✅ تم السداد</button>')+(S[g.phone]?'<button class="sm rs0" style="font-size:12px;color:var(--mut)">تصفير</button>':'')+'<button class="pbtn" style="font-size:12px;color:var(--bad);border-color:var(--bad)">'+(s.pb?'✓ ⚠️ تعديل البلاغ':'⚠️ بلاغ مشكلة')+'</button></div>';
   d.innerHTML=h;
@@ -538,8 +562,8 @@ function render(){
   d.querySelectorAll('.rcb').forEach(b=>b.onclick=()=>openReceipt(g,g.students[+b.dataset.i]));
   if($q('.wa'))$q('.wa').onclick=e=>{if(need()){e.preventDefault();return}setTimeout(()=>inc(g.phone,'wa'),300)};
   if($q('.sms'))$q('.sms').onclick=e=>{if(need()){e.preventDefault();return}copy(m,'نُسخت الرسالة (إن لم يفتح التطبيق الصقها في الرسائل)');setTimeout(()=>inc(g.phone,'sms'),300)};
-  if($q('.cm'))$q('.cm').onclick=e=>{copy(m,'تم نسخ الرسالة');flash(e.currentTarget,'تم النسخ')};
-  if($q('.cp'))$q('.cp').onclick=e=>{copy(g.phone,'تم نسخ الرقم');flash(e.currentTarget,'تم النسخ')};
+  if($q('.cm'))$q('.cm').onclick=()=>openDiscount(g);
+  if($q('.cp'))$q('.cp').onclick=()=>openPhoneEdit(g);
   if($q('.rw'))$q('.rw').onclick=()=>inc(g.phone,'wa');
   if($q('.rs'))$q('.rs').onclick=()=>inc(g.phone,'sms');
   if($q('.n'))$q('.n').onclick=()=>setSt(g.phone,'nowa',s.nowa?0:1);
@@ -644,6 +668,8 @@ async function askContacts(){const box=$('excBox');
 /* ---------- بلاغ فني ---------- */
 function techInfo(){return['الصفحة: '+ID+' (الإصدار '+VER+')','المستخدم: '+(ME?ME.n+(ME.r?' ('+ME.r+')':''):'؟')+(UNAME?' | حساب Claude: '+UNAME:''),'المتصفح: '+navigator.userAgent,'الشاشة: '+innerWidth+'×'+innerHeight,'الوقت: '+when(Date.now()),'أولياء الأمور: '+G.length+' | بلا رقم: '+XC().filter(e=>!A[ekey(e)]).length,'حفظ الحالات: '+(STOK?'يعمل':'لا يعمل')+' | المزامنة: '+SYNC,'دعم جهات الاتصال: '+((navigator.contacts&&navigator.contacts.select)?'نعم':'لا')].concat(LASTERR?['آخر خطأ: '+LASTERR]:[]).join('\n')}
 function techText(){return'🛠️ بلاغ مشكلة فنية — '+TITLE+'\nنوع المشكلة: '+$('tType').value+'\nالوصف: '+($('tNote').value.trim()||'(لم يُكتب وصف)')+'\n\nمعلومات تقنية:\n'+techInfo()}
+$('peSave').onclick=savePhone;$('peClose').onclick=()=>{$('pe').style.display='none';PE=null};$('peNew').onkeydown=e=>{if(e.key==='Enter')savePhone()};
+$('dcSave').onclick=applyDiscount;$('dcClose').onclick=()=>{$('dc').style.display='none';DC=null};$('dcAmt').oninput=renderDc;$('dcStu').onchange=renderDc;
 $('rcClose').onclick=()=>{$('rc').style.display='none';RC=null};
 ['rcNo','rcDate','rcAmt','rcPayer','rcNote','rcMeth'].forEach(i=>{$(i).oninput=updRc;$(i).onchange=updRc});
 $('rcPrint').onclick=()=>{if(!RC)return;const o=rcObj();if(issueRc(o)===false)return;printHtml(receiptHtml(o))};
@@ -681,6 +707,7 @@ function receiptHtml(o){
  const sib=(g.students&&g.students.length)?String(g.students.length):'';
  let rows=it.map(a=>'<tr style="background:#e9e4de"><td '+td+'>'+esc(a[0])+'</td><td '+td+'>'+f2(a[1])+'</td><td '+td+'>'+f2(a[2])+'</td><td '+td+'>'+f2(a[3])+'</td><td '+td+'>'+f2(a[5])+'</td><td '+td+'>'+f2(a[6])+'</td><td '+td+'>'+f2(a[4])+'</td></tr>').join('');
  if(!rows)rows='<tr style="background:#e9e4de"><td '+td+'>'+(x.tt!==undefined?'إجمالي الرسوم':'&nbsp;')+'</td><td '+td+'>'+f2(x.tt)+'</td><td '+td+'>'+f2(x.pd)+'</td><td '+td+'>'+f2(x.ds)+'</td><td '+td+'>'+f2(x.rf)+'</td><td '+td+'>&nbsp;</td><td '+td+'>'+f2(s.r)+'</td></tr>';
+ if(it.length&&x.dc&&x.dc.length)rows+=x.dc.map(d=>'<tr style="background:#e9e4de"><td '+td+'>خصم معتمد'+(d.n?' ('+esc(d.n)+')':'')+'</td><td '+td+'>'+f2(0)+'</td><td '+td+'>'+f2(0)+'</td><td '+td+'>'+f2(d.a)+'</td><td '+td+'>'+f2(0)+'</td><td '+td+'>'+f2(0)+'</td><td '+td+'>'+f2(-d.a)+'</td></tr>').join('');
  const after=s.r-o.amount,hc='style="border:1px solid #d5dde2;padding:6px;background:#c9e6f4;text-align:center;font-size:13px"';
  return '<div class="rcp" style="width:794px;box-sizing:border-box;padding:26px 34px;direction:rtl;font:15px/1.7 Tahoma,Arial,sans-serif;color:#111;background:#fff">'+
  '<div style="display:flex;justify-content:space-between;align-items:center"><div style="flex:1"><div style="font-size:22px;font-weight:bold;color:#0a4f82">مدارس اليمن الدولية</div><div style="font-size:12px;color:#667">YEMEN INTERNATIONAL SCHOOLS</div></div>'+(RLOGO?'<img src="'+RLOGO+'" style="height:84px;width:auto" alt="">':'')+'</div>'+
@@ -728,6 +755,50 @@ async function receiptPdf(o){
   if(ok)toast('✓ تم تجهيز ملف PDF')
  }catch(e){toast('تعذّر إنشاء PDF: '+((e&&e.message)||''))}}
 
+/* ---------- تعديل الرقم واعتماد الخصم ---------- */
+let PE=null,DC=null;
+function openPhoneEdit(g){if(need())return;PE={g:g};$('peCur').textContent=g.phone;$('peNew').value='';
+ $('peInfo').textContent='سيُطبَّق التعديل على '+g.students.length+' طالب في هذه البطاقة: '+g.students.map(x=>x.n).join('، ');
+ $('pe').style.display='flex';setTimeout(()=>$('peNew').focus(),60)}
+function savePhone(){if(!PE||need())return;const g=PE.g,old=g.phone,nw=normPhone($('peNew').value);
+ if(!nw){toast('رقم غير صحيح. مصري: 01012345678 — دولي: +رمز الدولة ثم الرقم');return}
+ if(nw===old){toast('هذا هو الرقم الحالي');return}
+ const rows=[];let blocked=false;g.students.forEach(st=>{if(st.x&&st.x.id!==undefined)rows.push(st.x);else blocked=true});
+ if(blocked||!rows.length){toast('هذا الرقم من بيانات ثابتة ولا يمكن تعديله من هنا');return}
+ const clone=o=>o?JSON.parse(JSON.stringify(o)):null;
+ const u={k:'e',from:old,to:nw,rows:rows.map(x=>({id:x.id,p:x.p,b:x.b})),sOld:{},aOld:{}};u.sOld[old]=clone(S[old]);u.sOld[nw]=clone(S[nw]);
+ rows.forEach(x=>{x.p=nw;XDIRTY.add(x.b);const key=ekey({s:x.s,n:x.n});if(A[key]!==undefined){u.aOld[key]=A[key];delete A[key];ADIRTY.add(key)}});
+ const so=S[old];
+ if(so){const sn=S[nw];let m=clone(so);
+  if(sn){m=clone(sn);m.wa=(sn.wa||0)+(so.wa||0)||undefined;m.sms=(sn.sms||0)+(so.sms||0)||undefined;m.rc=(sn.rc||[]).concat(so.rc||[]);if(!m.rc.length)delete m.rc;m.paid=(sn.paid&&so.paid)?1:0;if(!m.pb&&so.pb)m.pb=so.pb;if((so.t||0)>(sn.t||0)){m.t=so.t;m.by=so.by}}
+  delete m.nowa;m.u=Date.now();S[nw]=m;delete S[old];DIRTY.add(old);DIRTY.add(nw)}
+ u.eid=ev('phone',old,old+' ← '+nw,{no:nw});U.push(u);save();render();renderExc();
+ $('pe').style.display='none';PE=null;toast('✓ تم تعديل الرقم إلى '+nw)}
+function openDiscount(g){if(need())return;DC={g:g};const sel=$('dcStu');
+ sel.innerHTML=g.students.map((x,i)=>'<option value="'+i+'">'+esc(x.n)+' — المتبقي '+fmt(x.r)+'</option>').join('');
+ sel.style.display=g.students.length>1?'':'none';$('dcAmt').value='';$('dcNote').value='';renderDc();$('dc').style.display='flex';setTimeout(()=>$('dcAmt').focus(),60)}
+const dcStu=()=>DC.g.students[+$('dcStu').value||0];
+function renderDc(){if(!DC)return;const s=dcStu(),x=s.x||{},amt=parseFloat($('dcAmt').value)||0;
+ $('dcCur').textContent=s.n+' — المتبقي الحالي: '+fmt(s.r)+' جنيه';
+ $('dcAfter').textContent=amt>0?('المتبقي بعد الخصم: '+(s.r-amt>=0?fmt(s.r-amt):'— (الخصم أكبر من المتبقي)')+' جنيه'):'';
+ const list=x.dc||[];$('dcList').innerHTML=list.length?'<div class="hint" style="margin-top:8px">خصومات معتمدة سابقاً لهذا الطالب:</div>':'';
+ list.forEach((d,i)=>{const row=document.createElement('div');row.className='sgi';
+  row.innerHTML='<span>'+fmt(d.a)+' جنيه — '+esc(d.by||'')+' · '+esc(when(d.t))+(d.n?'<br><small>'+esc(d.n)+'</small>':'')+'</span><button style="border-color:var(--bad);background:var(--bad)">إلغاء الخصم</button>';
+  let armed=false;row.querySelector('button').onclick=function(){if(!armed){armed=true;this.textContent='اضغط للتأكيد';setTimeout(()=>{armed=false;this.textContent='إلغاء الخصم'},4000);return}cancelDiscount(s,i)};
+  $('dcList').appendChild(row)})}
+function applyDiscount(){if(!DC||need())return;const s=dcStu(),x=s.x;
+ if(!x||x.id===undefined){toast('لا يمكن تطبيق الخصم على هذا الطالب (بيانات ثابتة)');return}
+ const amt=Math.round((parseFloat($('dcAmt').value)||0)*100)/100;if(!(amt>0)){toast('اكتب مبلغ الخصم');return}
+ if(amt>x.r+0.001){toast('الخصم أكبر من المتبقي ('+fmt(x.r)+' جنيه)');return}
+ const note=$('dcNote').value.trim(),u={k:'d',id:x.id,b:x.b,prev:{r:x.r,ds:x.ds,dc:x.dc?JSON.parse(JSON.stringify(x.dc)):undefined,had:{ds:'ds' in x}}};
+ x.r=Math.round((x.r-amt)*100)/100;x.ds=Math.round(((x.ds||0)+amt)*100)/100;x.dc=(x.dc||[]).concat([{a:amt,t:Date.now(),by:ME.n,n:note}]);
+ u.eid=ev('discount',DC.g.phone,s.n+' | '+fmt(amt),{amt:amt,stu:s.n,n:note});U.push(u);XDIRTY.add(x.b);save();render();renderExc();
+ $('dc').style.display='none';DC=null;toast('✓ تم اعتماد خصم '+fmt(amt)+' جنيه للطالب '+s.n)}
+function cancelDiscount(s,i){if(need())return;const x=s.x,d=x&&(x.dc||[])[i];if(!d)return;
+ const u={k:'d',id:x.id,b:x.b,prev:{r:x.r,ds:x.ds,dc:JSON.parse(JSON.stringify(x.dc)),had:{ds:'ds' in x}}};
+ x.r=Math.round((x.r+d.a)*100)/100;x.ds=Math.max(0,Math.round(((x.ds||0)-d.a)*100)/100);x.dc=x.dc.filter((_,j)=>j!==i);if(!x.dc.length)delete x.dc;
+ u.eid=ev('discount-',DC.g.phone,s.n+' | '+fmt(d.a),{amt:-d.a,stu:s.n});U.push(u);XDIRTY.add(x.b);save();render();renderExc();
+ $('dc').style.display='none';DC=null;toast('تم إلغاء الخصم')}
 /* ---------- ربط الأحداث ---------- */
 $('mgr').value=MGR;
 $('mgr').oninput=()=>{MGR=$('mgr').value.trim();try{localStorage.setItem('mgr_'+ID,MGR)}catch(e){}};
